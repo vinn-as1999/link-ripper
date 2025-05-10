@@ -1,8 +1,16 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  align-content: center;
 }
 
 .app-main {
@@ -11,6 +19,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  height: 100%;
 }
 
 .logo {
@@ -69,3 +78,29 @@ input {
   opacity: 0.9;
   transition: ease-in-out 0.3s;
 }
+
+
+@media (max-width: 740px) {
+  #root {
+    height: 100%;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw
+  }
+
+  .app-main {
+    height: 100vh;
+  }
+
+  .logo {
+    width: 23em;
+    height: 20em;
+  }
+
+  input {
+    width: 50vw;
+  }
+}
+
