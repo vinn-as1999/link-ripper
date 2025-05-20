@@ -17,7 +17,7 @@ function App() {
       return;
     }
 
-    const url = `http://localhost:8541/${params}?url=${link}`;
+    const url = `https://linkripper-back.vercel.app/${params}?url=${link}`;
     const response = await fetch(url, {method: 'GET'});
 
     const blob = await response.blob();
